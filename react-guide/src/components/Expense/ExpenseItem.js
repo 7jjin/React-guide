@@ -4,9 +4,11 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 function ExpenseItem(props) {
   const [title, setTitle] = useState(props.title);
+  const [date, setDate] = useState(props.date);
 
   const clickHandler = () => {
     setTitle("Updated");
+    setDate("Update");
   };
 
   return (
